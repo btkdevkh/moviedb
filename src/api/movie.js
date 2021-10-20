@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api_key = "2df6e9934443d30127b99ec912a194ac";
+const api_key = process.env.REACT_APP_API_KEY;
 
 export const seachMoviesWithKeyWord = (ketword) => {
   let url = `https://api.themoviedb.org/3/search/movie?`;
